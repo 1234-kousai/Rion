@@ -157,12 +157,12 @@ export default function HomePage() {
                   <CardContent className="p-8 text-center relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                      className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-${item.color}-500 to-${item.color}-600 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300 shadow-2xl shadow-${item.color}-500/25`}
+                      className={`w-16 h-16 mx-auto mb-6 flex items-center justify-center`}
                     >
                       <Image src={item.imageSrc} alt={item.title} width={32} height={32} />
                     </div>
-                    <h3 className="font-bold text-lg mb-3 text-white">{item.title}</h3>
-                    <p className="text-sm text-gray-300 leading-relaxed">{item.desc}</p>
+                    <h3 className="font-bold text-lg mb-3 text-gray-900">{item.title}</h3>
+                    <p className="text-sm text-gray-800 leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -331,12 +331,12 @@ export default function HomePage() {
                     <div className="relative z-10">
                       <div className="flex items-center gap-6 mb-8">
                         <div
-                          className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center shadow-2xl group-hover:rotate-12 transition-transform duration-300`}
+                          className={`w-16 h-16 flex items-center justify-center`}
                         >
                           <Image src={item.imageSrc} alt={item.title} width={32} height={32} />
                         </div>
                         <div>
-                          <h3 className="text-2xl font-black text-white">{item.title}</h3>
+                          <h3 className="text-2xl font-black text-gray-900">{item.title}</h3>
                           <p
                             className={`font-semibold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}
                           >
@@ -344,13 +344,13 @@ export default function HomePage() {
                           </p>
                         </div>
                       </div>
-                      <p className="text-gray-300 mb-8 leading-relaxed text-lg">{item.description}</p>
+                      <p className="text-gray-800 mb-8 leading-relaxed text-lg">{item.description}</p>
                       {item.features.length > 0 && (
                         <ul className="space-y-4">
                           {item.features.map((feature, idx) => (
                             <li key={idx} className="flex items-center gap-4">
                               <div className={`w-3 h-3 bg-gradient-to-r ${item.gradient} rounded-full shadow-lg`}></div>
-                              <span className="text-gray-300">{feature}</span>
+                              <span className="text-gray-800">{feature}</span>
                             </li>
                           ))}
                         </ul>
