@@ -6,6 +6,7 @@ import { Instagram, ArrowRight, Sparkles, Star, Zap } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { ImageSwitcher } from "@/components/ui/image-switcher"
+import Header from "@/components/header"
 
 export default function HomePage() {
   return (
@@ -18,53 +19,7 @@ export default function HomePage() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-conic from-purple-500/5 via-transparent to-blue-500/5 rounded-full animate-spin-slow"></div>
       </div>
 
-      {/* Header */}
-      <header className="relative z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl sticky top-0">
-        <div className="container mx-auto px-4 py-6">
-          <nav className="flex items-center justify-between">
-            <div className="group cursor-pointer flex items-center gap-2">
-              <Image src="/rion-group-watermark.png" alt="Rion Group Logo" width={40} height={40} className="object-contain" />
-              <div className="text-3xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
-                Rion Group
-              </div>
-              <div className="h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-            </div>
-            <div className="hidden md:flex items-center space-x-12">
-              <Link
-                href="#top"
-                className="relative group text-gray-300 hover:text-white transition-colors duration-300"
-              >
-                TOP
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link
-                href="#about"
-                className="relative group text-gray-300 hover:text-white transition-colors duration-300"
-              >
-                ABOUT
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link
-                href="#value"
-                className="relative group text-gray-300 hover:text-white transition-colors duration-300"
-              >
-                VALUE
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-            </div>
-            <Button
-              asChild
-              className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-500 hover:via-pink-500 hover:to-blue-500 border-0 shadow-2xl shadow-purple-500/25 group"
-            >
-              <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-2 px-6 py-3">
-                <Instagram className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                Instagram
-                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
-              </Link>
-            </Button>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section id="top" className="relative z-10 py-32 lg:py-48">
@@ -228,11 +183,11 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="flex-1 text-center lg:text-left">
-                    <h3 className="text-3xl font-black mb-3 text-white">創設者プロフィール</h3>
+                    <h3 className="text-3xl font-black mb-3 text-gray-900">創設者プロフィール</h3>
                     <h4 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-6">
                       一ノ瀬 リオン | 慶應生ホスト
                     </h4>
-                    <p className="text-gray-300 leading-relaxed text-lg">
+                    <p className="text-gray-800 leading-relaxed text-lg">
                       昼は学生起業家、夜はホスト。慶應経済で金融とビジネスを学び、AI/DXの世界へ。
                       自ら学生団体を創設し、現在は2つの事業（企業DX支援/夜職SNSプロデュース）を率いる傍ら、
                       夜はホストとして、時にはモデルとしても活動している。

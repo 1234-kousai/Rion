@@ -14,14 +14,21 @@ interface ImageSwitcherProps {
 
 export function ImageSwitcher({ images, interval = 2000, width, height, alt, className }: ImageSwitcherProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [isFading, setIsFading] = useState(false) // State to control fading
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }, interval)
+      setIsFading(true); // Start fade out
+      const fadeOutTimer = setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setIsFading(false); // Start fade in for new image
+      }, 500); // Duration of fade out (should match CSS transition duration)
 
-    return () => clearInterval(timer)
-  }, [images.length, interval])
+      return () => clearTimeout(fadeOutTimer);
+    }, interval); // This interval is the time between image changes
+
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
 
   return (
     <Image
@@ -29,7 +36,7 @@ export function ImageSwitcher({ images, interval = 2000, width, height, alt, cla
       alt={alt}
       width={width}
       height={height}
-      className={className}
+      className={`${className} transition-opacity duration-500 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}
     />
   )
 }
