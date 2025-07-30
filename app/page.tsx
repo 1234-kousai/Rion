@@ -48,13 +48,13 @@ export default function HomePage() {
             <div className="mb-8 animate-fade-in-up">
               <Badge
                 variant="outline"
-                className="border-purple-400/50 text-purple-300 bg-purple-500/10 backdrop-blur-sm px-6 py-2 text-sm font-medium"
+                className="border-purple-400/50 text-purple-300 bg-purple-500/10 backdrop-blur-sm px-8 py-3 text-lg font-medium tracking-widest shadow-lg"
               >
                 PROFESSIONAL GUILD
               </Badge>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-12 leading-tight animate-fade-in-up delay-200">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-12 leading-tight animate-fade-in-up delay-200 drop-shadow-lg">
               <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
                 才能に、戦略を
               </span>
@@ -63,7 +63,7 @@ export default function HomePage() {
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-300 mb-16 leading-relaxed max-w-4xl mx-auto animate-fade-in-up delay-400">
+            <p className="text-2xl md:text-3xl text-gray-100 mb-16 leading-relaxed max-w-4xl mx-auto animate-fade-in-up delay-400 tracking-wide">
               Rion Groupは、夜の世界で本気で成功したいホスト&キャストのための
               <span className="text-transparent bg-gradient-to-r from-purple-300 to-blue-300 bg-clip-text font-semibold">
                 プロフェッショナル・ギルド
