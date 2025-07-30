@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Instagram, ArrowRight, Users, TrendingUp, DollarSign, Heart, Sparkles, Star, Zap } from "lucide-react"
+import { Instagram, ArrowRight, Sparkles, Star, Zap } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -111,28 +111,28 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {[
                 {
-                  icon: TrendingUp,
+                  imageSrc: "/career-shift-icon.png",
                   title: "CAREER SHIFT",
                   desc: "セカンドキャリアの設計と、その機会を提供。",
                   color: "purple",
                   delay: "delay-100",
                 },
                 {
-                  icon: Users,
+                  imageSrc: "/branding-icon.png",
                   title: "BRANDING",
                   desc: "ファンを創り出す、再現性のあるSNS戦略。",
                   color: "pink",
                   delay: "delay-200",
                 },
                 {
-                  icon: DollarSign,
+                  imageSrc: "/monetize-icon.png",
                   title: "MONETIZE",
                   desc: "収入源を複線化し、経済的な安定を築く。",
                   color: "blue",
                   delay: "delay-300",
                 },
                 {
-                  icon: Heart,
+                  imageSrc: "/connection-icon.png",
                   title: "CONNECTION",
                   desc: "孤独を解消し、共に戦う最強の仲間と繋がる。",
                   color: "indigo",
@@ -148,7 +148,7 @@ export default function HomePage() {
                     <div
                       className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-${item.color}-500 to-${item.color}-600 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-300 shadow-2xl shadow-${item.color}-500/25`}
                     >
-                      <item.icon className="w-8 h-8 text-white" />
+                      <Image src={item.imageSrc} alt={item.title} width={32} height={32} />
                     </div>
                     <h3 className="font-bold text-lg mb-3 text-white">{item.title}</h3>
                     <p className="text-sm text-gray-300 leading-relaxed">{item.desc}</p>
@@ -267,7 +267,7 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-8">
               {[
                 {
-                  icon: TrendingUp,
+                  imageSrc: "/career-shift-icon.png",
                   title: "CAREER SHIFT",
                   subtitle: "次のステージへ",
                   description: "夜の世界で働く誰もが抱える「引退後」の不安を、具体的なキャリアプランへと転換させます。",
@@ -277,7 +277,7 @@ export default function HomePage() {
                   delay: "delay-100",
                 },
                 {
-                  icon: Users,
+                  imageSrc: "/branding-icon.png",
                   title: "BRANDING",
                   subtitle: "影響力を、資産に変える",
                   description: "あなたのSNSを、熱狂的なファンが集まる「資産」へとプロデュースします。",
@@ -287,7 +287,7 @@ export default function HomePage() {
                   delay: "delay-200",
                 },
                 {
-                  icon: DollarSign,
+                  imageSrc: "/monetize-icon.png",
                   title: "MONETIZE",
                   subtitle: "収入源を、複線化する",
                   description:
@@ -298,7 +298,7 @@ export default function HomePage() {
                   delay: "delay-300",
                 },
                 {
-                  icon: Heart,
+                  imageSrc: "/connection-icon.png",
                   title: "CONNECTION",
                   subtitle: "孤独から、共闘へ",
                   description: "孤独になりがちなこの業界で、店の垣根を越えた、本物の「仲間」と繋がる場所です。",
@@ -321,7 +321,7 @@ export default function HomePage() {
                         <div
                           className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center shadow-2xl group-hover:rotate-12 transition-transform duration-300`}
                         >
-                          <item.icon className="w-8 h-8 text-white" />
+                          <Image src={item.imageSrc} alt={item.title} width={32} height={32} />
                         </div>
                         <div>
                           <h3 className="text-2xl font-black text-white">{item.title}</h3>
