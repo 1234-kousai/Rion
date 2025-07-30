@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator"
 import { Instagram, ArrowRight, Sparkles, Star, Zap } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { ImageSwitcher } from "@/components/ui/image-switcher"
 
 export default function HomePage() {
   return (
@@ -202,11 +203,12 @@ export default function HomePage() {
                   <div className="flex-shrink-0">
                     <div className="relative">
                       <div className="w-40 h-40 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 rounded-3xl flex items-center justify-center shadow-2xl shadow-purple-500/25 group-hover:rotate-3 transition-transform duration-500">
-                        <Image
-                          src="/placeholder.svg?height=150&width=150"
-                          alt="一ノ瀬 リオン"
+                        <ImageSwitcher
+                          images={["/kousai1.png", "/kousai2.png"]}
+                          interval={2000}
                           width={150}
                           height={150}
+                          alt="一ノ瀬 リオン"
                           className="rounded-2xl object-cover"
                         />
                       </div>
