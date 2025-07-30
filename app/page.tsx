@@ -23,7 +23,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section id="top" className="relative z-10 py-32 lg:py-48">
-        <div className="absolute inset-0 flex items-center justify-center z-0 opacity-10">
+        <div className="absolute inset-0 flex items-center justify-center z-0 opacity-20">
           <Image
             src="/rion-group-watermark.png"
             alt="Rion Group Watermark"
@@ -58,7 +58,6 @@ export default function HomePage() {
               <span className="bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
                 才能に、戦略を
               </span>
-              <br />
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-gradient-x">
                 インストールする。
               </span>
@@ -66,7 +65,6 @@ export default function HomePage() {
 
             <p className="text-xl md:text-2xl text-gray-300 mb-16 leading-relaxed max-w-4xl mx-auto animate-fade-in-up delay-400">
               Rion Groupは、夜の世界で本気で成功したいホスト&キャストのための
-              <br />
               <span className="text-transparent bg-gradient-to-r from-purple-300 to-blue-300 bg-clip-text font-semibold">
                 プロフェッショナル・ギルド
               </span>
@@ -107,17 +105,17 @@ export default function HomePage() {
               ].map((item, index) => (
                 <Card
                   key={index}
-                  className={`group border-0 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-xl hover:from-white/10 hover:to-white/20 transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fade-in-up ${item.delay}`}
+                  className={`group border-0 bg-gradient-to-br from-black/50 to-black/70 backdrop-blur-xl hover:from-black/60 hover:to-black/80 transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fade-in-up ${item.delay}`}
                 >
                   <CardContent className="p-8 text-center relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                      className={`w-16 h-16 mx-auto mb-6 flex items-center justify-center`}
+                      className={`w-20 h-20 mx-auto mb-6 flex items-center justify-center`}
                     >
-                      <Image src={item.imageSrc} alt={item.title} width={32} height={32} />
+                      <Image src={item.imageSrc} alt={item.title} width={48} height={48} />
                     </div>
-                    <h3 className="font-bold text-lg mb-3 text-gray-900">{item.title}</h3>
-                    <p className="text-sm text-gray-800 leading-relaxed">{item.desc}</p>
+                    <h3 className="font-bold text-xl mb-3 text-white">{item.title}</h3>
+                    <p className="text-base text-gray-300 leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -161,7 +159,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <Card className="group border-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl hover:from-white/15 hover:to-white/10 transition-all duration-500 animate-fade-in-up delay-200">
+            <Card className="group border-0 bg-gradient-to-br from-black/50 to-black/70 backdrop-blur-xl hover:from-black/60 hover:to-black/80 transition-all duration-500 animate-fade-in-up delay-200">
               <CardContent className="p-12 md:p-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="flex flex-col lg:flex-row items-center gap-12 relative z-10">
@@ -183,11 +181,11 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="flex-1 text-center lg:text-left">
-                    <h3 className="text-3xl font-black mb-3 text-gray-900">創設者プロフィール</h3>
+                    <h3 className="text-3xl font-black mb-3 text-white">創設者プロフィール</h3>
                     <h4 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-6">
                       一ノ瀬 リオン | 慶應生ホスト
                     </h4>
-                    <p className="text-gray-800 leading-relaxed text-lg">
+                    <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                       昼は学生起業家、夜はホスト。慶應経済で金融とビジネスを学び、AI/DXの世界へ。
                       自ら学生団体を創設し、現在は2つの事業（企業DX支援/夜職SNSプロデュース）を率いる傍ら、
                       夜はホストとして、時にはモデルとしても活動している。
@@ -277,7 +275,7 @@ export default function HomePage() {
               ].map((item, index) => (
                 <Card
                   key={index}
-                  className={`group border-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl hover:from-white/15 hover:to-white/10 transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fade-in-up ${item.delay}`}
+                  className={`group border-0 bg-gradient-to-br from-black/50 to-black/70 backdrop-blur-xl hover:from-black/60 hover:to-black/80 transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fade-in-up ${item.delay}`}
                 >
                   <CardContent className="p-10 relative overflow-hidden">
                     <div
@@ -286,12 +284,12 @@ export default function HomePage() {
                     <div className="relative z-10">
                       <div className="flex items-center gap-6 mb-8">
                         <div
-                          className={`w-16 h-16 flex items-center justify-center`}
+                          className={`w-20 h-20 flex items-center justify-center`}
                         >
-                          <Image src={item.imageSrc} alt={item.title} width={32} height={32} />
+                          <Image src={item.imageSrc} alt={item.title} width={48} height={48} />
                         </div>
                         <div>
-                          <h3 className="text-2xl font-black text-gray-900">{item.title}</h3>
+                          <h3 className="text-2xl font-black text-white">{item.title}</h3>
                           <p
                             className={`font-semibold bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}
                           >
@@ -299,13 +297,13 @@ export default function HomePage() {
                           </p>
                         </div>
                       </div>
-                      <p className="text-gray-800 mb-8 leading-relaxed text-lg">{item.description}</p>
+                      <p className="text-gray-300 mb-8 leading-relaxed text-base">{item.description}</p>
                       {item.features.length > 0 && (
                         <ul className="space-y-4">
                           {item.features.map((feature, idx) => (
                             <li key={idx} className="flex items-center gap-4">
                               <div className={`w-3 h-3 bg-gradient-to-r ${item.gradient} rounded-full shadow-lg`}></div>
-                              <span className="text-gray-800">{feature}</span>
+                              <span className="text-gray-300">{feature}</span>
                             </li>
                           ))}
                         </ul>
