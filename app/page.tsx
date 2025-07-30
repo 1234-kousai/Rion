@@ -129,7 +129,7 @@ export default function HomePage() {
               >
                 <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-3">
                   <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-                  公式Instagramで、私たちの活動を見る
+                  Instagramを見る
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
                 </Link>
@@ -322,7 +322,7 @@ export default function HomePage() {
               >
                 <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-3">
                   <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-                  まずは公式InstagramのDMから、お気軽にご相談ください
+                  Instagramで相談する
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
                 </Link>
