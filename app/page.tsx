@@ -108,7 +108,7 @@ export default function HomePage() {
                 >
                   <CardContent className="p-8 pt-16 text-center relative overflow-visible">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <Image src={item.imageSrc} alt={item.title} width={96} height={96} className="absolute top-[-48px] left-1/2 -translate-x-1/2 z-20" />
+                    <Image src={item.imageSrc} alt={item.title} width={96} height={96} className="absolute top-[-48px] left-1/2 -translate-x-1/2 z-20 drop-shadow-lg group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="font-extrabold text-2xl mb-3 text-white">{item.title}</h3>
                     <p className="text-lg text-gray-200 leading-relaxed">{item.desc}</p>
                   </CardContent>
