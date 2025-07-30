@@ -22,7 +22,8 @@ export default function HomePage() {
       <header className="relative z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl sticky top-0">
         <div className="container mx-auto px-4 py-6">
           <nav className="flex items-center justify-between">
-            <div className="group cursor-pointer">
+            <div className="group cursor-pointer flex items-center gap-2">
+              <Image src="/rion-group-watermark.png" alt="Rion Group Logo" width={40} height={40} className="object-contain" />
               <div className="text-3xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
                 Rion Group
               </div>
@@ -67,7 +68,16 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section id="top" className="relative z-10 py-32 lg:py-48">
-        <div className="container mx-auto px-4 text-center">
+        <div className="absolute inset-0 flex items-center justify-center z-0 opacity-10">
+          <Image
+            src="/rion-group-watermark.png"
+            alt="Rion Group Watermark"
+            width={800}
+            height={800}
+            className="object-contain animate-pulse-slow"
+          />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-6xl mx-auto">
             {/* Floating Elements */}
             <div className="absolute top-20 left-10 animate-float">
