@@ -54,7 +54,7 @@ export default function HomePage() {
               asChild
               className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-500 hover:via-pink-500 hover:to-blue-500 border-0 shadow-2xl shadow-purple-500/25 group"
             >
-              <Link href="https://instagram.com" target="_blank" className="flex items-center gap-2 px-6 py-3">
+              <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-2 px-6 py-3">
                 <Instagram className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 Instagram
                 <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
@@ -163,7 +163,7 @@ export default function HomePage() {
                 size="lg"
                 className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-500 hover:via-pink-500 hover:to-blue-500 border-0 shadow-2xl shadow-purple-500/25 text-lg px-12 py-6 group"
               >
-                <Link href="https://instagram.com" target="_blank" className="flex items-center gap-3">
+                <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-3">
                   <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
                   公式Instagramで、私たちの活動を見る
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
@@ -355,7 +355,7 @@ export default function HomePage() {
                 size="lg"
                 className="relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-500 hover:via-pink-500 hover:to-blue-500 border-0 shadow-2xl shadow-purple-500/25 text-lg px-12 py-6 group"
               >
-                <Link href="https://instagram.com" target="_blank" className="flex items-center gap-3">
+                <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-3">
                   <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
                   まずは公式InstagramのDMから、お気軽にご相談ください
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
@@ -380,7 +380,7 @@ export default function HomePage() {
               variant="outline"
               className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 bg-transparent backdrop-blur-sm group"
             >
-              <Link href="https://instagram.com" target="_blank" className="flex items-center gap-3 px-8 py-4">
+              <Link href="https://www.instagram.com/rion.group.official?igsh=MTk1ajAyMW5mNzdyag%3D%3D&utm_source=qr" target="_blank" className="flex items-center gap-3 px-8 py-4">
                 <Instagram className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 Follow us on Instagram
               </Link>
